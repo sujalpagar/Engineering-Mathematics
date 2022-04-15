@@ -1,0 +1,145 @@
+{% extends 'basics.html' %}
+{% block head %}
+<script xmlns="http://www.w3.org/1999/html">
+    function ddlselect()
+    {
+    var d=document.getElementById("ddselect");
+    var displaytext=d.options[d.selectedIndex].text;
+    document.getElementById("txtvalue").value=displaytext;
+    }
+
+
+
+</script>
+{% endblock %}
+{% block title %}FrontPage{% endblock %}
+{% block body %}
+<br>
+
+<br>
+<div class="container sm-3 col-md-4">
+    <h1><b>Engineering Mathematics</b></h1>
+    <br>
+    <br>
+
+
+    <div class="container sm-3 mx-n4">
+        <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta content="width=device-width, initial-scale=1" name="viewport">
+            <meta content="" name="description">
+            <meta content="Mark Otto, Jacob Thornton, and Bootstrap contributors" name="author">
+            <meta content="Hugo 0.88.1" name="generator">
+            <title>Signin Template · Bootstrap v5.1</title>
+
+            <link href="https://getbootstrap.com/docs/5.1/examples/sign-in/" rel="canonical">
+
+
+            <!-- Bootstrap core CSS -->
+            <link crossorigin="anonymous" href="/docs/5.1/dist/css/bootstrap.min.css"
+                  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+                  rel="stylesheet">
+
+            <!-- Favicons -->
+            <link href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+            <link href="/docs/5.1/assets/img/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+            <link href="/docs/5.1/assets/img/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+            <link href="/docs/5.1/assets/img/favicons/manifest.json" rel="manifest">
+            <link color="#7952b3" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" rel="mask-icon">
+            <link href="/docs/5.1/assets/img/favicons/favicon.ico" rel="icon">
+            <meta content="#7952b3" name="theme-color">
+
+
+            <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </style>
+
+
+            <!-- Custom styles for this template -->
+            <link href="signin.css" rel="stylesheet">
+        </head>
+        <body class="text-center">
+
+        <main class="form-signin">
+            <form>
+                <img alt=""
+                     class="mb-4"
+                     height="57"
+                     src="https://media1.thehungryjpeg.com/thumbs2/ori_3656686_nzpb3u0ej2ci97divefz678eurwodozt9dd0b4ns_monogram-em-logo-design.jpg"
+                     width="72">
+                <h1 class="h3 mb-3 fw-normal">Please Select Subject Here</h1>
+                <form action="">
+                    <select required class="form-select required" id="Subject" name="Subject">
+                        <option disabled value="select required"
+                        <b class="disabled" aria-disabled="true">Select Subject</b></option>
+                        <option><b>Engineering Mathematics</option>
+
+                    </select>
+                    <br>
+                    <a href="http://127.0.0.1:8000/Engineering_Mathematics/"
+                    <button class="w-100 btn btn-lg btn-primary" type="submit">Start</button>
+                    </a>
+                </form>
+
+
+<!--                <select class="form-select" id="ddselect" onchange="ddlselect();">-->
+<!--                    <option value="none" content="none">Select Subject Here 👉</option>-->
+<!--                    <option><b>Engineering Mathematics</option>-->
+<!--                </select>-->
+<!--                <br>-->
+<!--                <center><input readonly disabled placeholder="&#45;&#45;Select Subject&#45;&#45;" type="text" id="txtvalue"-->
+<!--                               size="50"></center>-->
+<!--                <br>-->
+<!--                <a href="http://127.0.0.1:8000/Engineering_Mathematics/">-->
+<!--                    <button class="w-100 btn btn-lg btn-primary" >Start</button>-->
+<!--                </a>-->
+
+
+                <br>
+                <br>
+
+
+                <p class="mt-5 mb-3 text-muted">©2022 EM Company, Inc </p>
+            </form>
+        </main>
+
+        </body>
+        </html>
+
+    </div>
+</div>
+<br>
+<br>
+<br>
+{% endblock %}
+
